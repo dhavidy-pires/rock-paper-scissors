@@ -11,6 +11,9 @@
   <header>
     <h1>Rock Paper Scissors</h1>
   </header>
+  <div class="reset-button">
+    <button id="resetBtn" onclick="resetGame();">Reset Game</button>
+  </div>
   <div class="scoreboard">
     <div class="badge badge--user">User</div>
     <div class="badge badge--computer">Computer</div>
@@ -19,7 +22,7 @@
   <div class="result">
     <h2 id="result-message">Make your move!</h2>
   </div>
-  <div class="choices">
+  <div class="choices" id="choices">
     <div class="choice" id="rock" onclick="handleChoice('rock');">
       <img src="assets/rock.png" alt="Rock" />
     </div>

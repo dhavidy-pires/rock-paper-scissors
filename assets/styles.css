@@ -29,7 +29,7 @@ header > h1 {
   border: 3px solid #fff;
   border-radius: 8px;
   width: 300px;
-  margin: 60px auto;
+  margin: 20px auto;
   padding: 20px;
   color: #fff;
   text-align: center;
@@ -65,11 +65,18 @@ header > h1 {
   text-align: center;
 }
 
+.result big {
+  color: #e25840;
+  text-transform: capitalize;
+}
+
 .choices {
   margin: 60px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity 300ms ease-out;
+  opacity: 1;
 }
 
 .choices > .choice {
@@ -87,10 +94,6 @@ header > h1 {
   cursor: pointer;
 }
 
-.choices > .choice.active {
-  background-color: rgba(255,255,255,1);
-}
-
 .choices > .choice:last-child {
   margin-right: 0;
 }
@@ -102,4 +105,21 @@ header > h1 {
 .action-message h4 {
   color: #fff;
   text-align: center;
+}
+
+.reset-button {
+  text-align: center;
+}
+
+.reset-button > button {
+  margin: 15px 0;
+  padding: 10px 15px;
+  background-color: #e25840;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+  transform: translateY(-30px);
 }
