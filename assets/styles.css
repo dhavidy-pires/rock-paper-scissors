@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #24272e;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+header {
+  background: #fff;
+  padding: 35px;
+}
+
+header > h1 {
+  color: #25272e;
+  text-align: center;
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.scoreboard {
+  border: 3px solid #fff;
+  border-radius: 8px;
+  width: 300px;
+  margin: 60px auto;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.scoreboard > .badge {
+  font-size: 1em;
+  background-color: #e25840;
+  padding: 8px;
+}
+
+.scoreboard > .badge--user {
+  position: absolute;
+  top: 50px;
+  left: -20px;
+}
+
+.scoreboard > .badge--computer {
+  position: absolute;
+  top: 50px;
+  right: -56px;
+}
+
+.scoreboard > .score {
+  font-family: Oswald, sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.result {
+  color: #fff;
+  text-align: center;
+}
+
+.choices {
+  margin: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choices > .choice {
+  width: 100px;
+  padding: 10px;
+  margin-right: 25px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: background-color 300ms ease-out;
+  background-color: rgba(255,255,255,0);
+}
+
+.choices > .choice:hover {
+  background-color: rgba(255,255,255,1);
+  cursor: pointer;
+}
+
+.choices > .choice.active {
+  background-color: rgba(255,255,255,1);
+}
+
+.choices > .choice:last-child {
+  margin-right: 0;
+}
+
+.choices > .choice > img {
+  width: 100%;
+}
+
+.action-message h4 {
+  color: #fff;
+  text-align: center;
+}
